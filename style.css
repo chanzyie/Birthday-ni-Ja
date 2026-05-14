@@ -1,0 +1,113 @@
+body {
+    background-color: #dcd0c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.book-wrapper {
+    width: 320px;
+    height: 450px;
+    perspective: 1200px;
+}
+
+.book {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    padding: 20px;
+    background: #fdfaf1;
+    border: 1px solid #c2b280;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back { transform: rotateY(180deg); }
+
+.cover-front, .cover-back {
+    background-image: url('Purplecover.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #5d4037 !important;
+}
+
+.cover-front h1, .cover-back h2 {
+    color: #fdfaf1;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Georgia', serif;
+    margin: 5px;
+}
+
+.cover-front p {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.journal-img {
+    width: 100%;
+    max-height: 70%;
+    object-fit: contain;
+    border: 5px solid white;
+}
+
+.caption {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #444;
+    text-align: center;
+}
+
+#music-control {
+    margin-bottom: 15px;
+    z-index: 1000;
+}
+
+/* Emoji Animation Styles */
+.emoji-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.floating-emoji {
+    position: absolute;
+    bottom: -50px;
+    animation: floatUp 5s linear forwards;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+}

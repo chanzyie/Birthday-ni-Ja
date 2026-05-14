@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday ni Ja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="emoji-layer" class="emoji-container"></div>
+    <button id="music-control" onclick="toggleMusic()">🎵 Play Music</button>
+
+    <audio id="bday-song" loop>
+        <source src="Birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="book-wrapper">
+        <div class="book">
+            <!-- Page 1 (Cover + Image 1) -->
+            <div class="page" style="z-index: 8;">
+                <div class="front cover-front">
+                    <h1>HAPPY 18th DEBUT JA!</h1>
+                    <p>Tap left/right to flip through pages ➔</p>
+                    <p>PRESS PLAY MUSIC!</p>
+                </div>
+                <div class="back">
+                    <img src="14.jpg" class="journal-img">
+                    <p class="caption">HI JA! LEGAL NA JUD KA AND I'M SO HAPPY TO BE A WITNESS!
+                    I know that you have your own struggles but you never fail to show up all lively.
+                    I'm glad nga ikaw ang PINAKA TABIAN nato sa COF and I love that about you.</p>
+                </div>
+            </div>
+
+            <!-- Page 2 (Image 2 & 3) -->
+            <div class="page" style="z-index: 6;">
+                <div class="front">
+                    <img src="13.jpg" class="journal-img">
+                    <p class="caption">I do have lots of pictures pero di na maabot sa time nakog ukay huhu. These are few of them HAHAHA.</p>
+                </div>
+                <div class="back">
+                    <img src="12.jpg" class="journal-img">
+                    <p class="caption">Y'know Ja? If not for you, I think dili jud ko ka kita og COF. I'm alright with being by myself but you proved nga No man talaga is an island.</p>
+                </div>
+            </div>
+
+            <!-- Page 3 (Image 4 & 5) -->
+            <div class="page" style="z-index: 5;">
+                <div class="front">
+                    <img src="11.jpg" class="journal-img">
+                    <p class="caption">EYYYYYY LOOK LIKE AN ANGEL YARN SI ATTTECO? HAHAHAHAHAHA</p>
+                </div>
+                <div class="back">
+                    <img src="what.jpg" class="journal-img">
+                    <p class="caption">Nahan sad ko ani katung gi try natog lock si Zacheen sa cr. Thanks sa pag apil sako kaboang JA HAHAHA</p>
+                </div>
+            </div>
+
+            <!-- Page 4 (Image 6 & 7) -->
+            <div class="page" style="z-index: 4;">
+                <div class="front">
+                    <img src="10.jpeg" class="journal-img">
+                    <p class="caption">EYY Bagaya jud sako mhiema mag Cinderella. Galing oh, kuhang kuha. Pede naka manilhig ig human HAHAHA joke ra. Pretty kayka ani Ja and you were STUNNING YASSSSS QUEENNNN!!!</p>
+                </div>
+                <div class="back">
+                    <img src="5.jpeg" class="journal-img">
+                    <p class="caption">Sayang wala ang uban boys pero importante gwapa ka YIEEEE.</p>
+                </div>
+            </div>
+
+            <!-- Page 5 (Image 8 & 9) -->
+            <div class="page" style="z-index: 3;">
+                <div class="front">
+                    <img src="1.png" class="journal-img">
+                    <p class="caption">YASSSSSS SINO KA JAN? HAHAHAH (Bahala na nas Lei HAHAHAH)</p>
+                </div>
+                <div class="back">
+                    <img src="2.png" class="journal-img">
+                    <p class="caption">Mirror selfie with the birthday gurlieee. Ako ra juy na lahi huhuhu</p>
+                </div>
+            </div>
+
+            <!-- Page 6 (Image 10 & 11) -->
+            <div class="page" style="z-index: 2;">
+                <div class="front">
+                    <img src="3.jpg" class="journal-img">
+                    <p class="caption">Sino yung sexy, stunning, jaw dropping, heart stopping, mind bending nga future pediatrician namo biii? YIEEEEEE</p>
+                </div>
+                <div class="back">
+                    <img src="4.jpg" class="journal-img">
+                    <p class="caption">YEY Happy si atteco HAHAHHA</p>
+                </div>
+            </div>
+
+            <!-- Page 7 (Image 12, 13) -->
+            <div class="page" style="z-index: 2;">
+                <div class="front">
+                    <img src="8.jpeg" class="journal-img">
+                    <p class="caption">Imong arch nemesis og imo ka sayaw sa 18th candles YIEEE, EXCITED NAKO MU SHAGIT UGIEGIFADGF </p>
+                </div>
+                <div class="back">
+                    <img src="7.jpeg" class="journal-img">
+                    <p class="caption">Saurrey wala ko dira, nangita sad ko ninyo HAHAHA. Trpple queensss</p>
+                </div>
+            </div>
+            
+            <!-- Page 8 (Image 14 + Final Back Cover) -->
+                    <div class="page" style="z-index: 1;">
+                    <div class="front">
+                    <img src="15.jpg" class="journal-img">
+                    <p class="caption">GRADUATION! <br> Well cheers to the years that felt like months being together. You played an important role and became someone I cherish in my life. I'll surely miss you Ja.</p>
+                </div>
+                     <div class="back cover-back">   
+                        <h2>We will meet again.</h2>
+                         <p>Love, Chan! 🎂</p>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
